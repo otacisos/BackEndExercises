@@ -1,7 +1,9 @@
 // index.js
-const convert = require('./brlValue');
+const anyName = require('./brlValue');
 
-const usd = 10;
-const brl = convert(usd);
+// const usd = 10;
+// const brl = convert(usd);
 
-console.log(brl) // 53.7
+console.log(anyName);
+console.log(`Valor do dólar: ${anyName.brl}`);
+console.log(`10 dolls= ${anyName.usdToBrl(10)}`);
