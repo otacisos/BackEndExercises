@@ -1,7 +1,9 @@
-// index.js
-const convert = require('./brlValue');
+// brlValue.js
+const brl = 5.37;
 
-const usd = 10;
-const brl = convert(usd);
+const usdToBrl = (valueInUsd) => valueInUsd * brl;
 
-console.log(brl) // 53.7
+module.exports = {
+  brl,
+  usdToBrl,
+};
